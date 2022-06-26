@@ -1,0 +1,103 @@
+@import "base/mixins";
+@import "base/veriables";
+@import "base/resetCode";
+
+
+/*=================HEADER SUBMENU LAYOUT DESIGN===============================*/
+.header{
+    .navbar{
+        transition: .4s all ease-in-out;
+        .main_menu{
+            ul{
+                li{
+                    margin: 0 14px;
+                    a{
+                        color : $link-color;
+                        font-size: 15px;
+                        display: inline-block;
+                        letter-spacing: 1px;
+                        font-weight: 600;
+                        transition: .3s all ease-in-out;
+                        position: relative;
+                        padding: 0 !important;
+                        &.active,
+                        &:hover{
+                            color: $main-color;
+                        }
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            left:0;
+                            bottom:-2px;
+                            width:0px;
+                            height: 2px;
+                            background-color: $main-color;
+                            transition: .3s all ease-in-out;
+                        }
+                        &.active::after,
+                        &:hover::after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            #closeBtn{
+                display: none;
+                color: $red-color;
+            }
+        }
+        &.mobile_navbar{
+            .navbar-collapse{
+                opacity: 1;
+                visibility: visible;
+                .main_menu{
+                    transform: translateY(20px);
+                    #closeBtn{
+                        display: inline-block;
+                        margin-left: 10px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero_content{
+    position: relative;
+    .swiper {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .navbar{
+        .navbar-collapse{
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            display: block;
+            background-color: rgba(0,0,0,0.5);
+            z-index:1;
+            opacity: 0;
+            visibility: hidden;
+            transition: .4s all ease-in-out;
+            .main_menu{
+                background-color: #fff;
+                width: 340px;
+                margin: 0 auto;
+                padding: 40px 30px;
+                transform: translateY(-200px);
+                transition: .6s all ease-in-out;
+                ul{
+                    li{
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
