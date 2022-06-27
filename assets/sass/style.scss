@@ -4,6 +4,21 @@
 
 
 /*=================HEADER SUBMENU LAYOUT DESIGN===============================*/
+
+%background-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+%flexDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .header{
     .navbar{
         transition: .4s all ease-in-out;
@@ -12,11 +27,8 @@
                 li{
                     margin: 0 14px;
                     a{
-                        color : $link-color;
-                        font-size: 15px;
+                        @include fontStyle(15px,$link-color,600,1px);
                         display: inline-block;
-                        letter-spacing: 1px;
-                        font-weight: 600;
                         transition: .3s all ease-in-out;
                         position: relative;
                         padding: 0 !important;
@@ -25,10 +37,8 @@
                             color: $main-color;
                         }
                         &::after{
-                            position: absolute;
+                            @include positionAbsolute(auto,0,auto,-2px);
                             content: '';
-                            left:0;
-                            bottom:-2px;
                             width:0px;
                             height: 2px;
                             background-color: $main-color;
@@ -65,9 +75,120 @@
 
 .hero_content{
     position: relative;
-    .swiper {
-        width: 100%;
-        height: 100vh;
+    width:100%;
+    max-height: 100vh;
+    .carousel{
+        
+        .carousel-item{
+            position: relative;
+            img{
+                @extend %background-img;
+                height: 100vh;
+            }
+            .carousel-caption{
+                @include positionAbsolute(50%,50%,auto,auto);
+                transform: translate(-50%,-50%);
+                h1{
+                    font-size: $large-size;
+                    font-weight: 300;
+                }
+            }
+        }
+        .carousel-control-next, 
+        .carousel-control-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: $hero_details !important;
+            .carousel-control-next-icon, .carousel-control-prev-icon {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+        }
+       
+    }
+    .carousel-control-next{
+        right: 40px !important;
+    }     
+    .carousel-control-prev{
+        left: 40px !important;
+    }     
+
+    }
+}
+
+.info_content{
+    background-color: rgb(237, 237, 237);
+    h2{
+        font-size: $medium-small;
+    }
+    p{
+        font-size: $small-size;
+    }
+}
+
+.projects{
+    .single-project{
+        position: relative;
+        overflow: hidden;
+        .project-details{
+            @include positionAbsolute(50%,50%,auto,auto);
+            transform: translate(-50%,-50%);
+            z-index: 2;
+            
+            .like-counter{
+                @extend %flexDisplay;
+                transform: translateY(60px);
+                transition: .9s all ease-in-out;
+                column-gap: 6px;
+                color : $red-color;
+                opacity: 0;
+                 visibility: hidden;
+            }
+            .details{
+                transform: translateY(60px);
+                transition: .5s all ease-in-out;
+                opacity: 0;
+                 visibility: hidden;
+                h6{
+                    text-transform: uppercase;
+                    color:$dark-color;
+                    font-size: $extra-small;
+                    margin: 6px 0;
+                }
+                a{
+                    color : $blue-color;
+                }
+            }
+        }
+        &::after{
+            @include positionAbsolute(0,0,0,0);
+            content: "";
+            background-color: $fade-color;
+            opacity: 0;
+            visibility: hidden;
+            transition: .4s all ease-in-out;
+        }
+        &:hover::after{
+            opacity: 1;
+            visibility: visible;
+        }
+        &:hover{
+            .like-counter{
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+            .details{
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+       
     }
 }
 

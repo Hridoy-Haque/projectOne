@@ -8,3 +8,18 @@
 
 // create responsive font size 
 
+@mixin  positionAbsolute($top, $left, $right, $bottom) {
+    position: absolute;
+    top:$top;
+    left:$left;
+    right:$right;
+    bottom:$bottom;
+}
+
+@mixin  fontStyle($font-size,$font-color,$font-weight,$letter-spacing) {
+
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $font-color;
+    letter-spacing: $letter-spacing;
+}

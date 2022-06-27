@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- ======================= MAIN STYLE SHEET SETUP ========================== -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -23,7 +23,7 @@
     <!-- ================================ WORKING ON HEADER PART LAYOUT   ===================================-->
 
     <header class="header fixed-top">
-        <nav class="navbar  navbar-expand-xl bg-light">
+        <nav class="navbar  navbar-expand-xl ">
             <div class="container">
                 <a href="" class="navbar-brand">
                     <img src="assets/img/logo_light.png" alt="" class="img-fluid">
@@ -70,24 +70,245 @@
         <main>
             <!-- hero content  -->
 
-            <section class="hero_content">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">Slide 1</div>
-                      <div class="swiper-slide">Slide 2</div>
-                      <div class="swiper-slide">Slide 3</div>
-                      <div class="swiper-slide">Slide 4</div>
-                      <div class="swiper-slide">Slide 5</div>
-                      <div class="swiper-slide">Slide 6</div>
-                      <div class="swiper-slide">Slide 7</div>
-                      <div class="swiper-slide">Slide 8</div>
-                      <div class="swiper-slide">Slide 9</div>
+            <section class="hero_content p-0">
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+
+                      <div class="carousel-item active">
+                        <img src="assets/img/section_1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h1 class="animated fadeInUp" style="animation-delay: 1s;" >First slide label</h1>
+                            <p>Some representative placeholder content for the first slide.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/section_2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h1 class="animated fadeInUp" style="animation-delay: 1s;">First slide label</h1>
+                            <p>Some representative placeholder content for the first slide.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/section_3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h1 class="animated fadeInUp" style="animation-delay: 1s;">First slide label 2</h1>
+                            <p>Some representative placeholder content for the first slide.</p>
+                          </div>
+                      </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+
                   </div>
+
             </section>
 
+            <!-- info content  -->
+
+            <section class="info_content ">
+                    <div class="row text-center">
+                        <div class="col">
+                            <h6>STUDIES AND DRAWS INSPIRATION FROM THE ELEMENTS OF TRADITIONAL ARCHITECTURE
+                            </h6>
+                            <h2 class="my-4">J.A.ARCHITECTS LIMITED
+                            </h2>
+                            <p>J.A.Architects Ltd. (JAA) has designed a large number of quality institutional, community led housing & settlement projects, healthcare, industrial, commercial and residential projects. To attain sustainability through designs, JAA studies & draws inspiration from the elements of traditional architecture. In 1997 Ar. Jalal Ahmed originally established J.A.Architects, which evolved from his distinguished partnership practice of Diagram Architects (1983). In February, 2005 J.A.Architects was registered under the companies act as J.A.Architects Ltd. JAA have designed various projects ranging from large academic institutions to small training centers made of earth blocks and from multifamily urban apartments to low cost settlements for the rural poor. Among the recent major building projects of JAA are BRAC University Campus Design with Aga Khan Award winning architect, WOHA of Singapore, Korean EPZ HQ Building at Chittagong and female workers dormitory complex comprising of 12 buildings, 300 Bed Hospital at Boardbazar, Training Center and Accommodation Facilities for Sajida Foundation etc. Projects designed by J.A.Architects Ltd. won IAB Design Awards 2016, INTBAU Excellence Award 2016 & Berger Awards for excellence in Design, 2015 for Disappearing Lands: Supporting Communities Affected By River Erosion, won prizes in a number of prestigious architectural competitions, including limited international competition of Franco-German Chancery Building (2009), North South University Campus-international design competition (2002). Ar. Jalal Ahmed also won the 1st prize for the “Mujib Nagar Memorial Open Design Competition” (as partner of Diagram Architects 1984). Many building projects JAA have been featured in leading international and local architectural publications like- Locations, Architecture Asia, Architecture+Design, Indian Architects and Builders, Open House International, DOT, Sthapatya O Nirman.
+                            </p>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- project content  -->
+            
+            <section class="projects">
+                <div class="container">
+                    <h4 class="subtitle text-center">
+                        recent project
+                    </h4>
+                    <div class="row project-content text-center my-5">
+                        <div class="col-md-4 item">
+                                <div class="single-project">
+                                    <img src="assets/img/1.jpg" alt="">
+                                    <div class="project-details">
+                                    <div class="like-counter mb-3">
+                                        <i class="bx bxs-heart"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="details">
+                                        <h6>brac university</h6>
+                                        <a href="#">more details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item">
+                                <div class="single-project">
+                                    <img src="assets/img/2.jpg" alt="">
+                                    <div class="project-details">
+                                    <div class="like-counter mb-3">
+                                        <i class="bx bxs-heart"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="details">
+                                        <h6>brac university</h6>
+                                        <a href="#">more details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item">
+                                <div class="single-project">
+                                    <img src="assets/img/3.jpg" alt="">
+                                    <div class="project-details">
+                                    <div class="like-counter mb-3">
+                                        <i class="bx bxs-heart"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="details">
+                                        <h6>brac university</h6>
+                                        <a href="#">more details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item">
+                                <div class="single-project">
+                                    <img src="assets/img/4.jpg" alt="">
+                                    <div class="project-details">
+                                    <div class="like-counter mb-3">
+                                        <i class="bx bxs-heart"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="details">
+                                        <h6>brac university</h6>
+                                        <a href="#">more details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item">
+                                <div class="single-project">
+                                    <img src="assets/img/5.jpg" alt="">
+                                    <div class="project-details">
+                                    <div class="like-counter mb-3">
+                                        <i class="bx bxs-heart"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="details">
+                                        <h6>brac university</h6>
+                                        <a href="#">more details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item">
+                                <div class="single-project">
+                                    <img src="assets/img/6.jpg" alt="">
+                                    <div class="project-details">
+                                    <div class="like-counter mb-3">
+                                        <i class="bx bxs-heart"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="details">
+                                        <h6>brac university</h6>
+                                        <a href="#">more details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item ">
+                                <div class="single-project">
+                                    <img src="assets/img/7.jpg" alt="">
+                                    <div class="project-details">
+                                    <div class="like-counter mb-3">
+                                        <i class="bx bxs-heart"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="details">
+                                        <h6>brac university</h6>
+                                        <a href="#">more details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item ">
+                                <div class="single-project">
+                                    <img src="assets/img/8.jpg" alt="">
+                                    <div class="project-details">
+                                    <div class="like-counter mb-3">
+                                        <i class="bx bxs-heart"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="details">
+                                        <h6>brac university</h6>
+                                        <a href="#">more details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item ">
+                                <div class="single-project">
+                                    <img src="assets/img/9.jpg" alt="">
+                                    <div class="project-details">
+                                    <div class="like-counter mb-3">
+                                        <i class="bx bxs-heart"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="details">
+                                        <h6>brac university</h6>
+                                        <a href="#">more details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item">
+                                <div class="single-project">
+                                    <img src="assets/img/10.jpg" alt="">
+                                    <div class="project-details">
+                                    <div class="like-counter mb-3">
+                                        <i class="bx bxs-heart"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="details">
+                                        <h6>brac university</h6>
+                                        <a href="#">more details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item disabled">
+                                <a class="page-link " href="#" aria-label="Previous">
+                                    Previous
+                                </a>
+                              </li>
+                              <li class="page-item active"><a class="page-link active" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">4</a></li>
+                              <li class="page-item"><a class="page-link" href="#">5</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    Next
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+                </div>
+            </section>
         </main>
 
     <!--================================= VENDOR JS FILE SETUP   ==========================================-->
@@ -95,7 +316,7 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <!--================================= MAIN JS FILE SETUP   ==========================================-->
 
     <script src="assets/js/main.js"></script>

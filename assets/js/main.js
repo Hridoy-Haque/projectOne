@@ -32,3 +32,27 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+
+const btn = document.querySelector('.swiper-button-next');
+
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+  }
+  window.addEventListener('load', () => {
+    aos_init();
+  });
+
+
+var container = document.querySelector('.project-content');
+
+new Isotope( container, {
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});

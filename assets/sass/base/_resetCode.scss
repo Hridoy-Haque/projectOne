@@ -12,13 +12,26 @@ ul{
     scroll-behavior: smooth;
 }
 
+
+
 body{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+    letter-spacing: 1px;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0;
 }
 
 ul li{
     list-style: none;
+}
+
+.row{
+    margin:0;
+    padding: 0;
 }
 
 i{
@@ -39,3 +52,17 @@ button{
     }
 }
 
+section{
+    padding:70px 0;
+}
+
+.subtitle{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $fade-dark;
+}
+
+::selection{
+    background-color: $main-color;
+}
