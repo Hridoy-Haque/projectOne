@@ -2,11 +2,13 @@
 
 /*===========SELECT NAVBAR ELEMENT =================*/
 
-const navbar = document.querySelector('.navbar'),
+const header = document.querySelector('.header'),
+             navbar = document.querySelector('.navbar'),
              showBtn = document.getElementById('showBtn'),
              closeBtn = document.getElementById('closeBtn');
 
-
+// mobile navbar active function ======>
+             
 function showMenu(){
     navbar.classList.add('mobile_navbar')
 }
@@ -17,6 +19,23 @@ function closeMenu(){
 
 showBtn.addEventListener('click', showMenu)
 closeBtn.addEventListener('click', closeMenu)
+
+// navbar background while scroll function ======>
+
+function navbarBg(){
+  let scrollTop = window.scrollY
+  if(scrollTop > 20){
+    header.classList.add('whiteBg')
+  }else{
+    header.classList.remove('whiteBg')
+  }
+}
+
+window.addEventListener('scroll',navbarBg)
+window.addEventListener('load',navbarBg)
+
+
+// swipper for carousel or slider ======>
 
 
 var swiper = new Swiper(".mySwiper", {
@@ -34,8 +53,8 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
+// animation section when page scroll  ======>
 
-const btn = document.querySelector('.swiper-button-next');
 
   function aos_init() {
     AOS.init({
@@ -49,10 +68,12 @@ const btn = document.querySelector('.swiper-button-next');
     aos_init();
   });
 
+// isotope portfolio image gallery  ======>
+  
 
-var container = document.querySelector('.project-content');
-
-new Isotope( container, {
-  itemSelector: '.item',
-  layoutMode: 'fitRows'
-});
+  let portfolioContainer = document.querySelector('.project-content');
+    if (portfolioContainer) {
+      let portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: '.item'
+      });
+    }

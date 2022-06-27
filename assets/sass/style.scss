@@ -5,6 +5,8 @@
 
 /*=================HEADER SUBMENU LAYOUT DESIGN===============================*/
 
+/*============= COMMON CSS CODES =================*/
+
 %background-img{
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,8 +20,17 @@
     align-items: center;
 }
 
+/*============= MAIN STRUCTURE CSS CODES =================*/
+
+ 
+// header part design =====>
 
 .header{
+    transition: .4s all ease-in-out;
+    &.whiteBg{
+        background-color: $white-color;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
     .navbar{
         transition: .4s all ease-in-out;
         .main_menu{
@@ -73,6 +84,8 @@
     }
 }
 
+// hero_content part design =====>
+
 .hero_content{
     position: relative;
     width:100%;
@@ -120,6 +133,8 @@
     }
 }
 
+// info_content part design =====>
+
 .info_content{
     background-color: rgb(237, 237, 237);
     h2{
@@ -129,6 +144,8 @@
         font-size: $small-size;
     }
 }
+
+// projects part design =====>
 
 .projects{
     .single-project{
@@ -191,6 +208,94 @@
        
     }
 }
+
+// footer part design =====>
+
+.footer{
+    background-color: $dark-color;
+    a,p{
+        color: $fade-color;
+        font-size: $small-size;
+    }
+    h6{
+        text-transform: uppercase;
+        @include fontStyle(17px,$white-color,600,1px)
+    }
+    .usefulLinks{
+        ul{
+            li{
+                margin-bottom: 5px;
+                a{
+                    transition: .4s all ease-in-out;
+                    text-transform: uppercase;
+                    font-size: $extra-small;
+                    &:hover{
+                        color : $white-color;
+                    }
+                }
+            }
+        }
+    } 
+    .contact{
+        a{
+            transition: .3s all ease-in-out;
+            &:hover{
+                color:$main-color;
+            }
+        }
+    }
+    .social{
+        form{
+            .form-group{
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr max-content;
+                align-items: center;
+                input{
+                    height: 35px;
+                    outline: none;
+                    border: 0;
+                    padding-left: 10px;
+                }
+                button{
+                    background-color: $main-color !important;
+                    height: 35px;
+                    padding: 0 12px;
+                    color:$white-color;
+                }
+            }
+        }
+        ul{
+            li{
+                display: inline-block;
+                line-height: initial;
+                margin-right: 4px;
+                a{
+                    @extend %flexDisplay;
+                    width:35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    background-color:$fade-color;
+                    color: $dark-color;
+                    transition: .3s all ease-in-out;
+                    &:hover{
+                        background-color: $blue-color;
+                        color: $white-color;
+                    }
+                    i{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*============= MOBILE DEVICE CSS CODES =================*/
+
+
+// max width 1200px =====>
 
 @media only screen and (max-width:1200px){
     .navbar{

@@ -63,6 +63,23 @@ section{
     color: $fade-dark;
 }
 
+.pagination{
+    .page-item{
+        .page-link{
+            color:$main-color;
+            &.active{
+                color:$white-color;
+                background-color: $main-color;
+                border-color: $main-color;
+            }
+            &:focus{
+                box-shadow: none !important;
+            }
+        }
+        
+    }
+}
 ::selection{
     background-color: $main-color;
 }
+
