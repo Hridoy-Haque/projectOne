@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap');
 
 @import "veriables";
 @import "mixins";
@@ -67,6 +67,11 @@ section{
 .subtitle{
     @include fontStyle(18px,$fade-dark,600,0);
     text-transform: uppercase;
+}
+
+.section_title{
+    padding: 140px 0;
+    background-color: $hero_details;
 }
 
 .commonSec{

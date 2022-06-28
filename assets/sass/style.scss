@@ -295,6 +295,31 @@
     // }
 }
 
+/*============= AWARDS PAGE LAYOUT DESIGN =================*/
+
+// award title section  design =====>
+
+
+// publication title section  design =====>
+
+.publication{
+    .single_publication{
+        i{
+            font-size: $medium-small;
+            color:$fade-color;
+        }
+        h6{
+            @include fontStyle($font-18,$fade-dark,600,2px);
+            line-height: $medium-small;
+            text-transform: uppercase;
+        }
+        p{
+            @include fontStyle($small-size,$fade-dark,400,2px);
+        }
+    }
+}
+
+
 // footer part design =====>
 
 
