@@ -77,3 +77,28 @@ var swiper = new Swiper(".mySwiper", {
         itemSelector: '.item'
       });
     }
+  let projectContainer = document.querySelector('.portfolio-content');
+    if (projectContainer) {
+      let portfolioIsotope = new Isotope(projectContainer, {
+        itemSelector: '.item'
+      });
+
+    let items = document.querySelectorAll('.portfolio_items li');
+    
+    items.forEach((item)=>{
+      item.addEventListener('click',function(e){
+        items.forEach((el)=>{
+          el.classList.remove('active')
+        })
+        e.target.classList.add('active')
+        portfolioIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        // aos_init();
+      })
+    })
+    
+
+    }
+
+
