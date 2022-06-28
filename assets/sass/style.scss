@@ -31,6 +31,32 @@
     &.whiteBg{
         background-color: $white-color;
         box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        transition: .4s all ease-in-out;
+        .navbar{
+            a{
+                img{
+                    max-width: 70%;
+                }
+            }
+            .main_menu{
+                ul{
+                    li{
+                        a{
+                            color:$dark-color !important;
+                            &.active,
+                            &:hover{
+                                color: $active-color !important;
+                            }
+                            &::after{
+                                background-color: $active-color !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       
+        
     }
     .navbar{
         transition: .4s all ease-in-out;
@@ -46,14 +72,14 @@
                         padding: 0 !important;
                         &.active,
                         &:hover{
-                            color: $main-color;
+                            color: $dark-color;
                         }
                         &::after{
                             @include positionAbsolute(auto,0,auto,-2px);
                             content: '';
                             width:0px;
                             height: 2px;
-                            background-color: $main-color;
+                            background-color: $dark-color;
                             transition: .3s all ease-in-out;
                         }
                         &.active::after,
@@ -116,7 +142,7 @@
             width: 35px;
             height: 35px;
             border-radius: 50%;
-            background-color: $hero_details !important;
+            background-color: $overlay !important;
             .carousel-control-next-icon, .carousel-control-prev-icon {
                 display: inline-block;
                 width: 18px;
@@ -188,7 +214,7 @@
                         margin: 6px 0;
                     }
                     p{
-                        color : $blue-color;
+                        color : $active-color;
                     }
                 }
             }
@@ -207,7 +233,7 @@
             &::after{
                 @include positionAbsolute(0,0,0,0);
                 content: "";
-                background-color: $link-active;
+                background-color: $fade-overlay;
                 opacity: 0;
                 width:100%;
                 height: 100%;
@@ -253,12 +279,12 @@
                 @include fontStyle($normal-size,$dark-color,600,1px);
                 transition: .3s all ease-in-out;
                 &:hover{
-                    color:$link-active;
+                    color:$active-color;
                 }
             }
            }
            p{
-             @include fontStyle($extra-small,$link-active,400,1px);
+             @include fontStyle($extra-small,$active-color,400,1px);
              &.highlight{
                 color: $fade-color;
              }
@@ -299,6 +325,14 @@
 
 // award title section  design =====>
 
+.award{
+    .subtitle{
+        margin-bottom: 8px;
+    }
+    p{
+        color: $fade-color
+    }
+}
 
 // publication title section  design =====>
 
@@ -339,12 +373,19 @@
                     box-shadow: none;
                     background-color: transparent;
                     &:focus{
-                        border-color: $blue-color;
+                        border-color: $active-color;
                     }
                 }
                 textarea{
                     height: 120px;
                 }
+            }
+            .contact_btn{
+                background-color: $active-color !important;
+                padding:10px 20px;
+                text-transform: capitalize;
+                @include fontStyle($small-size,$white-color,400,1px);
+                border-radius:3px;
             }
         }
         .google_map{
@@ -353,6 +394,20 @@
             iframe{
                 height: 100%;
                 width: 100%;
+            }
+        }
+    }
+
+    .contact_address{
+        .icon{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #2553b8;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            i{
+                color:$white-color;
             }
         }
     }
@@ -392,7 +447,7 @@
         a{
             transition: .3s all ease-in-out;
             &:hover{
-                color:$main-color;
+                color:$active-color;
             }
         }
     }
@@ -410,7 +465,7 @@
                     padding-left: 10px;
                 }
                 button{
-                    background-color: $main-color !important;
+                    background-color: $active-color !important;
                     height: 35px;
                     padding: 0 12px;
                     color:$white-color;
@@ -431,7 +486,7 @@
                     color: $dark-color;
                     transition: .3s all ease-in-out;
                     &:hover{
-                        background-color: $blue-color;
+                        background-color: $active-color;
                         color: $white-color;
                     }
                     i{

@@ -38,7 +38,7 @@ ul li{
 }
 
 i{
-    line-height: 0;
+    line-height: initial;
     font-size: 25px;
 }
 
@@ -60,7 +60,7 @@ section{
 }
 
 .title{
-    @include fontStyle($medium-size,$fade-dark,600,0);
+    @include fontStyle($medium-size,$link-color,600,0);
     text-transform: uppercase;
 }
 
@@ -71,7 +71,7 @@ section{
 
 .section_title{
     padding: 140px 0;
-    background-color: $hero_details;
+    background-color: $overlay;
 }
 
 .commonSec{
@@ -87,7 +87,7 @@ section{
             bottom:30px;
             left:50%;
             transform: translateX(-50%);
-            background-color: $hero_details !important;
+            background-color: $overlay !important;
             display: inline-block;
             padding:16px;
             border-radius: 50%;
@@ -117,13 +117,13 @@ section{
 .pagination{
     .page-item{
         .page-link{
-            color:$main-color;
+            color:$active-color;
             font-size: $extra-small;
             padding:.30rem .6rem;
             &.active{
                 color:$white-color;
-                background-color: $main-color;
-                border-color: $main-color;
+                background-color: $active-color;
+                border-color: $active-color;
             }
             &:focus{
                 box-shadow: none !important;
@@ -153,11 +153,33 @@ section{
         content:"";
         width:70%;
         height: 2px;
-        background-color: $main-color;
+        background-color: $active-color;
     }
 }
 
 ::selection{
-    background-color: $main-color;
+    background-color: $active-color;
+    color: $white-color;
 }
 
+
+.scrollTopBtn{
+    position: fixed;
+    right:30px;
+    bottom: 40px;
+    background-color: $active-color !important;
+    line-height: initial;
+    padding:4px;
+    border-radius: 3px;
+    transition: .3s all ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    &.showBtn{
+        visibility: visible;
+        opacity: 1;
+    }
+    i{
+        line-height:initial;
+        color:$white-color;
+    }
+}

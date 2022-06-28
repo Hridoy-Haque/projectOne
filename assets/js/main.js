@@ -64,6 +64,7 @@ var swiper = new Swiper(".mySwiper", {
       mirror: false
     });
   }
+
   window.addEventListener('load', () => {
     aos_init();
   });
@@ -72,12 +73,15 @@ var swiper = new Swiper(".mySwiper", {
   
 
   let portfolioContainer = document.querySelector('.project-content');
+
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.item'
       });
     }
+
   let projectContainer = document.querySelector('.portfolio-content');
+
     if (projectContainer) {
       let portfolioIsotope = new Isotope(projectContainer, {
         itemSelector: '.item'
@@ -101,4 +105,24 @@ var swiper = new Swiper(".mySwiper", {
 
     }
 
+// scroll to top ========>
 
+const scrollBtn = document.querySelector('.scrollTopBtn');
+
+function scrollButtonActivate(){
+  let scrollTop = window.scrollY ;
+  if(scrollTop > 70){
+    scrollBtn.classList.add('showBtn')
+  }else{
+    scrollBtn.classList.remove('showBtn')
+  }
+}
+
+
+window.addEventListener('scroll',scrollButtonActivate)
+window.addEventListener('load',scrollButtonActivate)
+
+scrollBtn.addEventListener('click',function(){
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0
+})
