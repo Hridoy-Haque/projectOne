@@ -20,6 +20,7 @@
     align-items: center;
 }
 
+
 /*============= MAIN STRUCTURE CSS CODES =================*/
 
  
@@ -147,69 +148,141 @@
 
 // projects part design =====>
 
-.projects{
+.projects,
+.project_content{
     .single-project{
         position: relative;
         overflow: hidden;
-        .project-details{
-            @include positionAbsolute(50%,50%,auto,auto);
-            transform: translate(-50%,-50%);
-            z-index: 2;
-            
-            .like-counter{
-                @extend %flexDisplay;
-                transform: translateY(60px);
-                transition: .9s all ease-in-out;
-                column-gap: 6px;
-                color : $red-color;
+        text-align: center;
+        .project_link{
+            display: block;
+            position: relative;
+            z-index: 1;
+            &::after{
+                @include positionAbsolute(0,0,0,0);
+                content: "";
+                background-color: $link-active;
                 opacity: 0;
-                 visibility: hidden;
+                width:100%;
+                height: 100%;
+                visibility: hidden;
+                transition: .4s all ease-in-out;
             }
-            .details{
-                transform: translateY(60px);
-                transition: .5s all ease-in-out;
-                opacity: 0;
-                 visibility: hidden;
-                h6{
-                    text-transform: uppercase;
-                    color:$dark-color;
-                    font-size: $extra-small;
-                    margin: 6px 0;
-                }
-                a{
-                    color : $blue-color;
-                }
-            }
-        }
-        &::after{
-            @include positionAbsolute(0,0,0,0);
-            content: "";
-            background-color: $fade-color;
-            opacity: 0;
-            visibility: hidden;
-            transition: .4s all ease-in-out;
-        }
-        &:hover::after{
-            opacity: 1;
-            visibility: visible;
-        }
-        &:hover{
-            .like-counter{
+            &:hover::after{
                 opacity: 1;
                 visibility: visible;
-                transform: translateY(0);
             }
-            .details{
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
+            .project-details{
+                @include positionAbsolute(50%,50%,auto,auto);
+                transform: translate(-50%,-50%);
+                z-index: 2;
+                
+                .like-counter{
+                    @extend %flexDisplay;
+                    transform: translateY(60px);
+                    transition: .9s all ease-in-out;
+                    column-gap: 6px;
+                    color : $red-color;
+                    opacity: 0;
+                     visibility: hidden;
+                }
+                .details{
+                    transform: translateY(60px);
+                    transition: .5s all ease-in-out;
+                    opacity: 0;
+                     visibility: hidden;
+                    h6{
+                        text-transform: uppercase;
+                        color:$dark-color;
+                        font-size: $extra-small;
+                        margin: 6px 0;
+                    }
+                    p{
+                        color : $blue-color;
+                    }
+                }
+            }
+            &:hover{
+                .like-counter{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+                .details{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
             }
         }
+        
+        
+        
        
     }
 }
 
+/*============= TEAM PAGE LAYOUT DESIGN =================*/
+
+// team section  design =====>
+
+.team{
+    @extend %background-img;
+    background-image: url('../img/section_2.png');
+    .sectionDetails{
+        h3{
+            font-size: $font-18;
+            font-weight: 600;
+        }
+    }
+}
+
+// single person card part design =====>
+
+
+.single-person{
+    .card{
+        border: 0;
+        .card-body{
+           h4{
+            a{
+                @include fontStyle($normal-size,$dark-color,600,1px);
+                transition: .3s all ease-in-out;
+                &:hover{
+                    color:$link-active;
+                }
+            }
+           }
+           p{
+             @include fontStyle($extra-small,$link-active,400,1px);
+             &.highlight{
+                color: $fade-color;
+             }
+           }
+        }
+    }
+}
+
+/*============= PROJECT PAGE LAYOUT DESIGN =================*/
+
+// project section  design =====>
+
+.ourprojects{
+    @extend %background-img;
+    background-image: url('../img/section_2.png');
+}
+
+.project_content{
+    .single-project{
+        img{
+            max-height: 450px !important;
+        }
+    }
+}
+
 // footer part design =====>
+
+
 
 .footer{
     background-color: $dark-color;

@@ -5,10 +5,10 @@
     
 $main-color: #55cfb1;
 $link-color : #e0e0e0;
-$link-active :#bcbcbc;
+$link-active :rgba(228, 224, 194,0.6);
 $white-color  : #fff;
 $dark-color: #1c1c1c;
-$fade-color :rgba(207, 207, 207, 0.8);
+$fade-color :#bba887;
 $fade-dark:#202020;
 $red-color: rgb(218, 94, 94);
 $blue-color: #544dc0;
@@ -18,7 +18,10 @@ $hero_details : rgba(55, 68, 62, 0.4);
 
     $large-size: 68px;
     $medium-size : 48px;
-    $medium-small : 34px;
+    $medium-small : 30px;
+    $font-18 : 18px;
+    $font-20 : 20px;
+    $font-24 : 24px;
     $normal-size : 16px;
     $small-size : 14px;
     $extra-small : 13px;

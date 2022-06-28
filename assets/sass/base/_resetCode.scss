@@ -12,6 +12,9 @@ ul{
     scroll-behavior: smooth;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 
 body{
@@ -56,17 +59,62 @@ section{
     padding:70px 0;
 }
 
-.subtitle{
-    font-size: 18px;
+.title{
+    @include fontStyle($medium-size,$fade-dark,600,0);
     text-transform: uppercase;
-    font-weight: 600;
-    color: $fade-dark;
+}
+
+.subtitle{
+    @include fontStyle(18px,$fade-dark,600,0);
+    text-transform: uppercase;
+}
+
+.commonSec{
+    min-width: 100%;
+    height: 100vh;
+    .sectionDetails{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        .scrollBtn{
+            position: absolute;
+            bottom:30px;
+            left:50%;
+            transform: translateX(-50%);
+            background-color: $hero_details !important;
+            display: inline-block;
+            padding:16px;
+            border-radius: 50%;
+            color:$white-color;
+            transform: translateY(-30px);
+            animation: scrollAnimation 1s  infinite;
+            i{
+                font-size: $medium-small !important;
+            }
+           
+        }
+        @keyframes scrollAnimation {
+            0%{
+               transform: translateY(-10px); 
+            }
+            50%{
+               transform: translateY(-0px); 
+            }
+            
+            100%{
+               transform: translateY(-10px); 
+            }
+        }
+    }
 }
 
 .pagination{
     .page-item{
         .page-link{
             color:$main-color;
+            font-size: $extra-small;
+            padding:.30rem .6rem;
             &.active{
                 color:$white-color;
                 background-color: $main-color;
@@ -79,6 +127,31 @@ section{
         
     }
 }
+
+.teamTitile{
+    text-transform: uppercase;
+    @include fontStyle($medium-size,$dark-color,300,2px);
+    display: inline-block;
+}
+
+.teamSubtittle{
+    text-transform: uppercase;
+    @include fontStyle($font-24,$dark-color,300,2px);
+    display: inline-block;
+}
+
+.underline{
+    position: relative;
+    &::after{
+        @include positionAbsolute(auto,50%,auto,-14px);
+        transform: translateX(-50%);
+        content:"";
+        width:70%;
+        height: 2px;
+        background-color: $main-color;
+    }
+}
+
 ::selection{
     background-color: $main-color;
 }
