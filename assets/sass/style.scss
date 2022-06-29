@@ -33,6 +33,11 @@
         box-shadow: 0 2px 5px rgba(0,0,0,0.5);
         transition: .4s all ease-in-out;
         .navbar{
+            #showBtn{
+                i{
+                    color: $dark-color !important;
+                }
+            }
             a{
                 img{
                     max-width: 70%;
@@ -60,6 +65,11 @@
     }
     .navbar{
         transition: .4s all ease-in-out;
+        #showBtn{
+            i{
+                color: $white-color;
+            }
+        }
         .main_menu{
             ul{
                 li{
@@ -176,34 +186,6 @@
 // service_content part design =====>
 
 .service_content{
-    .service_details{
-        h1{
-            text-transform: uppercase;
-            @include fontStyle($small-size,$dark-color,600,1px);
-        }
-        h2{
-            @include fontStyle($medium-small,$dark-color,400,2px);
-            margin: 16px 0;
-        }
-        p{
-            color: $fade-color;
-        }
-        a{
-            display: inline-block;
-            padding: 10px 30px;
-            color: $white-color;
-            font-size: $small-size;
-            background-color: $active-color;
-            text-transform: uppercase;
-            border-radius: 30px;
-            margin-top: 20px;
-            transition: .3s all ease-in-out;
-            &:hover{
-                background-color: #3372fce6;
-            }
-        }
-    }
-
     .services{
         .single_service{
             span{
@@ -224,6 +206,37 @@
         }
     }
 }
+
+// services common part =======>
+
+.details{
+    h2{
+        text-transform: uppercase;
+        @include fontStyle($small-size,$dark-color,600,1px);
+    }
+    h3{
+        @include fontStyle($medium-small,$dark-color,400,2px);
+        margin: 16px 0;
+    }
+    p{
+        color: $fade-color;
+    }
+    a{
+        display: inline-block;
+        padding: 10px 30px;
+        color: $white-color;
+        font-size: $small-size;
+        background-color: $active-color;
+        text-transform: uppercase;
+        border-radius: 30px;
+        margin-top: 20px;
+        transition: .3s all ease-in-out;
+        &:hover{
+            background-color: #3372fce6;
+        }
+    }
+}
+
 
 // projects part design =====>
 
@@ -369,6 +382,36 @@
                         @include fontStyle($extra-small,$fade-color,400,1px);
                         margin: 8px 0;
                     }
+                }
+            }
+        }
+    }
+}
+
+// single person card part design =====>
+
+.commited_content{
+    background-color: $link-color;
+    .commited_video{
+        position: relative;
+        .video_img{
+            img{
+                max-height: 450px;
+                width: 100%;
+                @extend %background-img;
+            }
+        }
+        .playBtn{
+            @include positionAbsolute(50%,50%,auto,auto);
+            transform: translate(-50%,-50%);
+            i{
+                font-size: $large-size;
+                color : $white-color;
+                transition: .3s all ease-in-out;
+            }
+            &:hover{
+                i{
+                color: $active-color;
                 }
             }
         }
