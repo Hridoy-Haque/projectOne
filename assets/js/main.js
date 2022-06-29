@@ -1,5 +1,14 @@
 "use strict"
 
+
+
+/*=========== preloader animaton =================*/
+
+window.addEventListener('load',function(){
+  const loader = document.getElementById('preloader');
+  loader.classList.add('hide_preloader')
+})
+
 /*===========SELECT NAVBAR ELEMENT =================*/
 
 const header = document.querySelector('.header'),
