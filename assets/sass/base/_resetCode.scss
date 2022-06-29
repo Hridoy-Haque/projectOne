@@ -82,6 +82,10 @@ section{
         width: 100%;
         text-align: center;
         position: relative;
+        h3{
+            @include fontStyle($normal-size,$white-color,300,2px);
+            text-transform: uppercase;
+        }
         .scrollBtn{
             position: absolute;
             bottom:30px;

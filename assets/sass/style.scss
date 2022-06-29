@@ -65,7 +65,7 @@
                 li{
                     margin: 0 14px;
                     a{
-                        @include fontStyle(15px,$link-color,600,1px);
+                        @include fontStyle($small-size,$link-color,600,1px);
                         display: inline-block;
                         transition: .3s all ease-in-out;
                         position: relative;
@@ -172,6 +172,59 @@
     }
 }
 
+
+// service_content part design =====>
+
+.service_content{
+    .service_details{
+        h1{
+            text-transform: uppercase;
+            @include fontStyle($small-size,$dark-color,600,1px);
+        }
+        h2{
+            @include fontStyle($medium-small,$dark-color,400,2px);
+            margin: 16px 0;
+        }
+        p{
+            color: $fade-color;
+        }
+        a{
+            display: inline-block;
+            padding: 10px 30px;
+            color: $white-color;
+            font-size: $small-size;
+            background-color: $active-color;
+            text-transform: uppercase;
+            border-radius: 30px;
+            margin-top: 20px;
+            transition: .3s all ease-in-out;
+            &:hover{
+                background-color: #3372fce6;
+            }
+        }
+    }
+
+    .services{
+        .single_service{
+            span{
+                i{
+                    font-size: 80px;
+                    color: $fade-color;
+                }
+                
+            }
+            h6{
+                @include fontStyle($normal-size,$dark-color,500,1px);
+                text-transform: uppercase;
+                margin: 14px 0;
+            }
+            p{
+                @include fontStyle($small-size,$fade-color,400,1px);
+            }
+        }
+    }
+}
+
 // projects part design =====>
 
 .projects,
@@ -259,12 +312,6 @@
 .team{
     @extend %background-img;
     background-image: url('../img/section_2.png');
-    .sectionDetails{
-        h3{
-            font-size: $font-18;
-            font-weight: 600;
-        }
-    }
 }
 
 // single person card part design =====>
