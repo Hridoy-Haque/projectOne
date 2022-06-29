@@ -71,7 +71,9 @@ var swiper = new Swiper(".mySwiper", {
 
 // isotope portfolio image gallery  ======>
   
+//wuthout filter ========>
 
+window.addEventListener('load',function(){
   let portfolioContainer = document.querySelector('.project-content');
 
     if (portfolioContainer) {
@@ -79,7 +81,13 @@ var swiper = new Swiper(".mySwiper", {
         itemSelector: '.item'
       });
     }
+})
 
+
+//with filter ==========>
+
+
+window.addEventListener('load', function(){
   let projectContainer = document.querySelector('.portfolio-content');
 
     if (projectContainer) {
@@ -104,6 +112,10 @@ var swiper = new Swiper(".mySwiper", {
     
 
     }
+})
+
+
+
 
 // scroll to top ========>
 
