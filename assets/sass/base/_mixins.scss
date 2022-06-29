@@ -1,12 +1,5 @@
 
-
-//create dynamic border
-
-// @mixin border($brdWidth,$color) {
-//     border:  $brdWidth solid $color;
-// }
-
-// create responsive font size 
+// create  dynamic position mixin
 
 @mixin  positionAbsolute($top, $left, $right, $bottom) {
     position: absolute;
@@ -15,6 +8,8 @@
     right:$right;
     bottom:$bottom;
 }
+
+// create font style mixin 
 
 @mixin  fontStyle($font-size,$font-color,$font-weight,$letter-spacing) {
 

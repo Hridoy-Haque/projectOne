@@ -80,24 +80,8 @@ var swiper = new Swiper(".mySwiper", {
 
 // isotope portfolio image gallery  ======>
   
-//wuthout filter ========>
-
-window.addEventListener('load',function(){
-  let portfolioContainer = document.querySelector('.project-content');
-
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.item'
-      });
-    }
-})
-
-
-//with filter ==========>
-
-
 window.addEventListener('load', function(){
-  let projectContainer = document.querySelector('.portfolio-content');
+  let projectContainer = document.querySelector('.project-content');
 
     if (projectContainer) {
       let portfolioIsotope = new Isotope(projectContainer, {
@@ -147,10 +131,3 @@ scrollBtn.addEventListener('click',function(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0
 })
-
-// Glightbox for video ========>
-
-
-var myLightbox = GLightbox({
-  selector: '.glightbox'
-});

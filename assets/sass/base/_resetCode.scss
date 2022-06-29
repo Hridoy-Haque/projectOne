@@ -69,9 +69,19 @@ section{
     text-transform: uppercase;
 }
 
+.navbar-brand{
+    // color:$red-color;
+    @include fontStyle($small-size,$fade-color,400,1px);
+    text-transform: capitalize;
+    span{
+        text-transform: uppercase;
+        @include fontStyle($font-24,$active-color,400,1px);
+    }
+}
+
 .section_title{
     padding: 140px 0;
-    background-color: $overlay;
+    background-color: $fade-dark;
 }
 
 .commonSec{
