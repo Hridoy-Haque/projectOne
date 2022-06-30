@@ -99,31 +99,28 @@ section{
         }
         .scrollBtn{
             position: absolute;
-            bottom:30px;
-            left:50%;
-            transform: translateX(-50%);
+            bottom: 30px;
             background-color: $overlay !important;
             display: inline-block;
             padding:16px;
             border-radius: 50%;
             color:$white-color;
-            transform: translateY(-30px);
             animation: scrollAnimation 1s  infinite;
             i{
                 font-size: $medium-small !important;
             }
-           
         }
         @keyframes scrollAnimation {
             0%{
-               transform: translateY(-10px); 
+                transform: translateY(-10px);
             }
             50%{
-               transform: translateY(-0px); 
+               transform: translateY(0px);
+
             }
             
             100%{
-               transform: translateY(-10px); 
+                transform: translateY(-10px);
             }
         }
     }
