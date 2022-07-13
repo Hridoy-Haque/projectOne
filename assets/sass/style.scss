@@ -98,32 +98,6 @@
         background-color: $white-color;
         box-shadow: 0 2px 5px rgba(0,0,0,0.5);
         transition: .4s all ease-in-out;
-        .navbar{
-            #showBtn{
-                i{
-                    color: $dark-color !important;
-                }
-            }
-            
-            .main_menu{
-                ul{
-                    li{
-                        a{
-                            color:$dark-color !important;
-                            &.active,
-                            &:hover{
-                                color: $active-color !important;
-                            }
-                            &::after{
-                                background-color: $active-color !important;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-       
-        
     }
     .navbar{
         transition: .4s all ease-in-out;
@@ -138,21 +112,21 @@
                 li{
                     margin: 0 14px;
                     a{
-                        @include fontStyle($small-size,$link-color,600,1px);
+                        @include fontStyle($small-size,$dark-color,600,1px);
                         display: inline-block;
                         transition: .3s all ease-in-out;
                         position: relative;
                         padding: 0 !important;
                         &.active,
                         &:hover{
-                            color: $fade-dark;
+                            color: $active-color;
                         }
                         &::after{
                             @include positionAbsolute(auto,0,auto,-2px);
                             content: '';
                             width:0px;
                             height: 2px;
-                            background-color: $dark-color;
+                            background-color: $active-color;
                             transition: .3s all ease-in-out;
                         }
                         &.active::after,
@@ -202,7 +176,7 @@
                 @include positionAbsolute(50%,50%,auto,auto);
                 transform: translate(-50%,-50%);
                 p{
-                    @include fontStyle($normal-size,$white-color,300,2px);
+                    @include fontStyle($normal-size,$dark-color,300,2px);
                     text-transform: uppercase;
                     margin-top: 10px;
                 }
@@ -393,7 +367,7 @@
 
 .team{
     @extend %background-img;
-    background-image: url('../img/buildings/build-5.jpg');
+    background-image: url('../img/contact.jpg');
 }
 
 // single person card part design =====>
@@ -476,7 +450,7 @@
 
 .ourprojects{
     @extend %background-img;
-    background-image: url('../img/buildings/build-6.jpg');
+    background-image: url('../img/projects.jpg');
 }
 
 .project_content{
@@ -539,7 +513,7 @@
 /*============= PROJECT PAGE LAYOUT DESIGN =================*/
 
 .contact_bg{
-    background-image: url('../img/buildings/reservation-bg.jpg');
+    background-image: url('../img/contact.jpg');
     @extend %background-img;
 }
 
@@ -611,14 +585,14 @@
 
 
 .footer{
-    background-color: $dark-color;
+    background-color: $footer-color;
     a,p{
         color: $fade-color;
         font-size: $small-size;
     }
     h6{
         text-transform: uppercase;
-        @include fontStyle(17px,$white-color,600,1px)
+        @include fontStyle(17px,$dark-color,600,1px)
     }
     .usefulLinks{
         ul{
@@ -629,7 +603,7 @@
                     text-transform: uppercase;
                     font-size: $extra-small;
                     &:hover{
-                        color : $white-color;
+                        color : $active-color;
                     }
                 }
             }

@@ -61,23 +61,13 @@ section{
 }
 
 .title{
-    @include fontStyle($medium-size,$link-color,600,0);
+    @include fontStyle($medium-size,$dark-color,600,0);
     text-transform: uppercase;
 }
 
 .subtitle{
     @include fontStyle(18px,$fade-dark,600,0);
     text-transform: uppercase;
-}
-
-.logo{
-    // color:$red-color;
-    @include fontStyle($small-size,$fade-dark,400,1px);
-    text-transform: capitalize;
-    span{
-        text-transform: uppercase;
-        @include fontStyle($font-24,$active-color,400,3px);
-    }
 }
 
 .section_title{
