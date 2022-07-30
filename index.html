@@ -1,545 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LEAD - home</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/Logo Icon 1.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/Logo Icon 1.png" />
 
     <!-- ========================= VENDOR STYLESHEET SETUP  ===================================== -->
 
-    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
-    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
     <!-- ======================= MAIN STYLE SHEET SETUP ========================== -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-<body>
-
-
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <div id="preloader" class="">
-        <div class="loader mb-4">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <h1><span>LEAD</span> architects ltd.</h1>
+      <div class="loader mb-4">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <h1><span>LEAD</span> architects ltd.</h1>
     </div>
 
     <!-- ================================ WORKING ON HEADER PART LAYOUT   ===================================-->
 
     <header class="header fixed-top">
-        <nav class="navbar  navbar-expand-xl ">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <img style="transition: .4s all ease-in-out;" src="assets/img/logo.png" alt="" class="img-fluid">
-                </a>
-                <button class="navbar-toggler" type="button" id="showBtn">
-                    <i class='bx bx-menu' ></i>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="collapse_menu">
-                    <div class="main_menu ms-auto" >
-                        <button type="button" id="closeBtn">
-                            <i class='bx bx-x' ></i>
-                        </button>
-                        <ul class="navbar-nav ">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link active">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="team.html" class="nav-link ">TEAM JAA</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="projects.html" class="nav-link">PROJECTS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="awards.html" class="nav-link">AWARDS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="publication.html" class="nav-link">PUBLICATION</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link">CONTACT US</a>
-                            </li>
-                        </ul>
-                    </div>
-                   
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand">
+        <div class="container">
+          <a href="#" class="navbar-brand"
+            ><img src="assets/img/logo.png" alt=""
+          /></a>
+          <button type="button" class="menu_button btn_shape ms-auto">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar_menu">
+            <ul class="navbar-nav ms-md-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="team.html" class="nav-link">TEAM JAA</a>
+              </li>
+              <li class="nav-item">
+                <a href="projects.html" class="nav-link">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a href="awards.html" class="nav-link">AWARDS</a>
+              </li>
+              <li class="nav-item">
+                <a href="publication.html" class="nav-link">PUBLICATION</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
+    <!--==================== MAIN CONTENT LAYOUT ===================== -->
+    <main>
+      <!-- hero content  -->
 
+      <section class="hero_content p-0">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/buildings/building-1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <h1 class="title animated fadeInUp" style="animation-delay: 1s">
+                  First slide label
+                </h1>
+                <p
+                  class="animated fadeInUp subtitle"
+                  style="animation-delay: 2s"
+                >
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/buildings/building-2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <h1 class="title animated fadeInUp" style="animation-delay: 1s">
+                  Second slide label
+                </h1>
+                <p
+                  class="animated fadeInUp subtitle"
+                  style="animation-delay: 2s"
+                >
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/buildings/building-3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <h1 class="title animated fadeInUp" style="animation-delay: 1s">
+                  Third slide label 2
+                </h1>
+                <p
+                  class="animated fadeInUp subtitle"
+                  style="animation-delay: 2s"
+                >
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <!--==================== MAIN CONTENT LAYOUT ===================== -->
-        <main>
-            <!-- hero content  -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
 
-            <section class="hero_content p-0">
-                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
 
-                    <div class="carousel-inner">
+      <!-- info content  -->
 
-                      <div class="carousel-item active">
-                        <img src="assets/img/buildings/building-1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption">
-                            <h1 class="title animated fadeInUp" style="animation-delay: 1s;" >First slide label</h1>
-                            <p class="animated fadeInUp subtitle" style="animation-delay: 2s;">Some representative placeholder content for the first slide.</p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/img/buildings/building-2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption">
-                            <h1 class="title animated fadeInUp" style="animation-delay: 1s;">Second slide label</h1>
-                            <p class="animated fadeInUp subtitle" style="animation-delay: 2s;">Some representative placeholder content for the first slide.</p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/img/buildings/building-3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption">
-                            <h1 class="title animated fadeInUp" style="animation-delay: 1s;">Third slide label 2</h1>
-                            <p class="animated fadeInUp subtitle" style="animation-delay: 2s;">Some representative placeholder content for the first slide.</p>
-                          </div>
-                      </div>
-                    </div>
+      <section class="info_content">
+        <div class="row text-center">
+          <div class="col">
+            <h2>
+              STUDIES AND DRAWS INSPIRATION FROM THE ELEMENTS OF TRADITIONAL
+              ARCHITECTURE
+            </h2>
+            <h3 class="my-4">Lead RCHITECTS LIMITED</h3>
+            <p>
+              lead architects is an ultramodern, design-led studio offering full
+              in-house architecture services tailored specifically to your
+              project. Our experienced team are all university trained to offer
+              expert architecture advice across all sectors. We design
+              aesthetically pleasing spaces that are functional, sustainable and
+              responsive. Our essential service offering encompasses the full
+              spectrum of in-house services, from feasibility to concept design
+              all the way through to post-construction support. lead architects
+              takes a customer centric approach to delivering projects so you’re
+              involved in your project every step of the way. Our design process
+              is practical and supportive of your needs and intentions. We
+              understand that both budgets and time frames are vital to the
+              success of your project. The lead architects team are adaptable to
+              each project, delivering form and function in beautiful harmony,
+              on time and on budget. lead architects incorporates sustainable
+              practices such as reducing paper use across our business to
+              substantially lower our carbon footprint and reduce our impact on
+              the environment. Our goal is to preserve this planet for us and
+              for future generations.
+            </p>
+          </div>
+        </div>
+      </section>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
+      <!-- services content  -->
+      <section class="service_content">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-xl-4" data-aos="fade-right">
+              <div class="service_details details">
+                <h2>Our Services</h2>
+                <h3>
+                  The Big Oxmox advised her not to do so, because there were
+                  thousands.
+                </h3>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <a href="#">contact us</a>
+              </div>
+            </div>
 
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-
+            <div class="col-lg-7 col-xl-8 mt-4 mt-lg-0" data-aos="fade-left">
+              <div class="row services">
+                <div class="col-sm-6 mb-4">
+                  <div class="single_service">
+                    <span><i class="bx bx-sitemap"></i></span>
+                    <h6>Square</h6>
+                    <p>
+                      Separated they live in Bookmarksgrove right at the coast
+                    </p>
                   </div>
-
-            </section>
-
-            <!-- info content  -->
-
-            <section class="info_content ">
-                    <div class="row text-center">
-                        <div class="col" >
-                            <h2>STUDIES AND DRAWS INSPIRATION FROM THE ELEMENTS OF TRADITIONAL ARCHITECTURE
-                            </h2>
-                            <h3 class="my-4">Lead RCHITECTS LIMITED
-                            </h3>
-                            <p>lead architects is an ultramodern, design-led studio offering full in-house architecture services tailored specifically to your project. Our experienced team are all university trained to offer expert architecture advice across all sectors.
-
-                                We design aesthetically pleasing spaces that are functional, sustainable and responsive. Our essential service offering encompasses the full spectrum of in-house services, from feasibility to concept design all the way through to post-construction support. lead architects takes a customer centric approach to delivering projects so you’re involved in your project every step of the way.
-                                
-                                Our design process is practical and supportive of your needs and intentions. We understand that both budgets and time frames are vital to the success of your project. The lead architects team are adaptable to each project, delivering form and function in beautiful harmony, on time and on budget. 
-                                
-                                lead architects incorporates sustainable practices such as reducing paper use across our business to substantially lower our carbon footprint and reduce our impact on the environment. Our goal is to preserve this planet for us and for future generations.
-                            </p>
-                        </div>
-                    </div>
-            </section>
-
-
-            <!-- services content  -->
-                <section class="service_content">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class=" col-lg-5 col-xl-4" data-aos="fade-right">
-                                <div class="service_details details">
-                                    <h2>Our Services</h2>
-                                    <h3>The Big Oxmox advised her not to do so, because there were thousands.</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <a href="#">contact us</a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-7 col-xl-8 mt-4 mt-lg-0" data-aos="fade-left">
-                                <div class="row services">
-                                    <div class="col-sm-6 mb-4">
-                                        <div class="single_service">
-                                            <span><i class='bx bx-sitemap'></i></span>
-                                            <h6>Square</h6>
-                                            <p>Separated they live in Bookmarksgrove right at the coast</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 mb-4">
-                                        <div class="single_service">
-                                            <span><i class='bx bx-directions' ></i></span>
-                                            <h6>Technology</h6>
-                                            <p>Separated they live in Bookmarksgrove right at the coast</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 mb-4">
-                                        <div class="single_service">
-                                            <span><i class='bx bx-bulb' ></i></span>
-                                            <h6>Square</h6>
-                                            <p>Separated they live in Bookmarksgrove right at the coast</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 mb-4">
-                                        <div class="single_service">
-                                            <span><i class='bx bx-edit-alt'></i></span>
-                                            <h6>Square</h6>
-                                            <p>Separated they live in Bookmarksgrove right at the coast</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            <!-- project content  -->
-            
-            <section class="projects">
-                <div class="container">
-                    <h4 class="subtitle text-center">
-                        recent project
-                    </h4>
-                    <div class="row project-content text-center my-5" >
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/1.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/2.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/3.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/4.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/5.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/6.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/7.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/8.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/9.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/10.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/11.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
-                            <div class="single-project">
-                                <a class="project_link" href="www.google.com">
-                                    <img src="assets/img/12.jpg" alt="">
-                                    <div class="project-details">
-                                        <div class="like-counter mb-3">
-                                            <i class="bx bxs-heart"></i>
-                                                <span>5</span>
-                                        </div>
-                                        <div class="details">
-                                            <h6>brac university</h6>
-                                            <p>more details</p>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                    </div>
-
-
-                    
-                    <div class="d-flex justify-content-center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                              <li class="page-item disabled">
-                                <a class="page-link " href="#" aria-label="Previous">
-                                    Previous
-                                </a>
-                              </li>
-                              <li class="page-item active"><a class="page-link active" href="#">1</a></li>
-                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item"><a class="page-link" href="#">4</a></li>
-                              <li class="page-item"><a class="page-link" href="#">5</a></li>
-                              <li class="page-item"><a class="page-link" href="#">...</a></li>
-                              <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    Next
-                                </a>
-                              </li>
-                            </ul>
-                          </nav>
-                    </div>
                 </div>
-            </section>
-
-            <!-- commited content  -->
-
-            <section class="commited_content">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-5 ">
-                            <div class="commited_details details">
-                                <h2>WE ARE COMMITTED</h2>
-                                <h3>THE ROAD OF SUCCESS IS ALWAYS UNDER CONSTRUCTION</h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-7 mt-4 mt-lg-0">
-                            <div class="commited_video">
-                                    <video  controls>
-                                        <source src="assets/img/Video/ZOA Architectural Animation Showreel 2017.mp4" type="video/mp4">
-                                      Your browser does not support the video tag.
-                                      </video>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm-6 mb-4">
+                  <div class="single_service">
+                    <span><i class="bx bx-directions"></i></span>
+                    <h6>Technology</h6>
+                    <p>
+                      Separated they live in Bookmarksgrove right at the coast
+                    </p>
+                  </div>
                 </div>
-            </section>
-
-        </main>
-
-        <!--================= footer section layout ================== -->
-
-        <footer class="footer py-5">
-            <div class="container">
-                <div class="row ">
-    
-                    <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                        <!-- address  -->
-    
-                        <div class="address">
-                            <a href="">
-                                <img src="assets/img/logo.png" alt="" class="img-fluid">
-                            </a>
-                                <p class="mt-4">Suite No - 11, H.M.Plaza (4th floor), House - 34, Road - 2, Sector - 3 , Uttara, Dhaka - 1230
-                            </div>
-                        </div>
-    
-                        <!-- useful links  -->
-    
-                        <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                            <div class="usefulLinks">
-                                <h6 class="mb-4">useful links</h6>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">TEAM JAA</a></li>
-                                    <li><a href="#">PROJECTS</a></li>
-                                    <li><a href="#">AWARDS</a></li>
-                                    <li><a href="#">PUBLICATION</a></li>
-                                    <li><a href="#">CONTACT US</a></li>
-                                </ul>
-                            </div>
-                        </div>
-    
-                        <!-- contact  -->
-    
-                        <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                            <div class="contact">
-                                <h6 class="mb-4">contact</h6>
-                                <div class="my-2">
-                                    <a href="tel://01715115119" class="d-block">(P) 01715115119</a>
-                                    <a href="tel://01730060575" class="d-block mt-2">(P) 01730060575</a>
-                                </div>
-                                
-                                <a href="mailto://leadarchitects@gmail.com" >leadarchitects@gmail.com</a>
-                            </div>
-                        </div>
-    
-                        <!-- social  -->
-    
-                        <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                            <div class="social">
-                                <h6 class="mb-4">newsletter</h6>
-                                <form action="">
-                                    <div class="form-group">
-                                        <input type="text">
-                                       <button class="newsBtn">
-                                        <i class='bx bx-send'></i>
-                                       </button>
-                                    </div>
-                                </form>
-                                <ul class="mt-4">
-                                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                                    <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
-                                    <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
-                                    <li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
-                                </ul>
-                                
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm-6 mb-4">
+                  <div class="single_service">
+                    <span><i class="bx bx-bulb"></i></span>
+                    <h6>Square</h6>
+                    <p>
+                      Separated they live in Bookmarksgrove right at the coast
+                    </p>
+                  </div>
                 </div>
-        </footer>
+                <div class="col-sm-6 mb-4">
+                  <div class="single_service">
+                    <span><i class="bx bx-edit-alt"></i></span>
+                    <h6>Square</h6>
+                    <p>
+                      Separated they live in Bookmarksgrove right at the coast
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- project content  -->
 
+      <section class="projects">
+        <div class="container">
+          <h4 class="subtitle text-center">recent project</h4>
+          <div class="row project-content text-center my-5">
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/1.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/2.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/3.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/4.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/5.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/6.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/7.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/8.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/9.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/10.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/11.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item mb-4" data-aos="fade-up">
+              <div class="single-project">
+                <a class="project_link" href="www.google.com">
+                  <img src="assets/img/12.jpg" alt="" />
+                  <div class="project-details">
+                    <div class="like-counter mb-3">
+                      <i class="bx bxs-heart"></i>
+                      <span>5</span>
+                    </div>
+                    <div class="details">
+                      <h6>brac university</h6>
+                      <p>more details</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
 
-        <!--================= scroll top button layout ================== -->
+          <div class="d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    Previous
+                  </a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link active" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next"> Next </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
 
+      <!-- commited content  -->
 
-    <button type="button" class="scrollTopBtn ">
-        <i class='bx bx-chevron-up' ></i>
+      <section class="commited_content">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="commited_details details">
+                <h2>WE ARE COMMITTED</h2>
+                <h3>THE ROAD OF SUCCESS IS ALWAYS UNDER CONSTRUCTION</h3>
+                <p>
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia. It is a paradisematic country,
+                  in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-7 mt-4 mt-lg-0">
+              <div class="commited_video">
+                <video controls>
+                  <source
+                    src="assets/img/Video/ZOA Architectural Animation Showreel 2017.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--================= footer section layout ================== -->
+
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+            <!-- address  -->
+
+            <div class="address">
+              <a href="">
+                <img src="assets/img/logo.png" alt="" class="img-fluid" />
+              </a>
+              <p class="mt-4">
+                Suite No - 11, H.M.Plaza (4th floor), House - 34, Road - 2,
+                Sector - 3 , Uttara, Dhaka - 1230
+              </p>
+            </div>
+          </div>
+
+          <!-- useful links  -->
+
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+            <div class="usefulLinks">
+              <h6 class="mb-4">useful links</h6>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TEAM JAA</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">AWARDS</a></li>
+                <li><a href="#">PUBLICATION</a></li>
+                <li><a href="#">CONTACT US</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- contact  -->
+
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+            <div class="contact">
+              <h6 class="mb-4">contact</h6>
+              <div class="my-2">
+                <a href="tel://01715115119" class="d-block">(P) 01715115119</a>
+                <a href="tel://01730060575" class="d-block mt-2"
+                  >(P) 01730060575</a
+                >
+              </div>
+
+              <a href="mailto://leadarchitects@gmail.com"
+                >leadarchitects@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <!-- social  -->
+
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+            <div class="social">
+              <h6 class="mb-4">newsletter</h6>
+              <form action="">
+                <div class="form-group">
+                  <input type="text" />
+                  <button class="newsBtn">
+                    <i class="bx bx-send"></i>
+                  </button>
+                </div>
+              </form>
+              <ul class="mt-4">
+                <li>
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--================= scroll top button layout ================== -->
+
+    <button type="button" class="scrollTopBtn">
+      <i class="bx bx-chevron-up"></i>
     </button>
 
     <!--================================= VENDOR JS FILE SETUP   ==========================================-->
@@ -547,10 +629,14 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+      integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!--================================= MAIN JS FILE SETUP   ==========================================-->
 
     <script src="assets/js/main.js"></script>
-
-</body>
+  </body>
 </html>

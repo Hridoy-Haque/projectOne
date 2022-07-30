@@ -18,16 +18,18 @@ const header = document.querySelector('.header'),
 
 // mobile navbar active function ======>
              
-function showMenu(){
-    navbar.classList.add('mobile_navbar')
-}
+const navbar_menu = document.getElementById("navbar_menu"),
+          menu_button = document.querySelector('.menu_button');
 
-function closeMenu(){
-    navbar.classList.remove('mobile_navbar')
-}
 
-showBtn.addEventListener('click', showMenu)
-closeBtn.addEventListener('click', closeMenu)
+    function showNavbar(){
+      navbar_menu.classList.toggle('show_collapse');
+      menu_button.classList.toggle('close_button')
+    }
+    
+    if(menu_button){
+      menu_button.addEventListener('click', showNavbar);
+    }
 
 // navbar background while scroll function ======>
 
